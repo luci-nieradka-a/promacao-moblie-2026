@@ -19,7 +19,7 @@ class Aula01 extends StatelessWidget {
             Container(
               width: double.infinity, // Retorna o valor total disponível
               height: 100,
-              color: Colors.deepOrange,
+              color: const Color.fromARGB(255, 252, 215, 96),
               child: Center(child: Text("Primeiro Container"),
                )
               ),
@@ -27,7 +27,7 @@ class Aula01 extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(16),
                 margin: EdgeInsets.all(16),
-                color: Colors.blueAccent,
+                color: const Color.fromARGB(255, 137, 172, 233),
                 child: const Center(
                   child: Text(
                     "Segundo Container",
