@@ -12,9 +12,10 @@ class MyWidget extends StatelessWidget {
         centerTitle: true,
       ), 
       body: SingleChildScrollView(
-        child: const Center(
-          child: Text("Meu Perfil"),
-        ),
+        // Adiciona um padding em torno do conteúdo da tela
+        padding: EdgeInsets.all(20),
+        child: Column()
+         children: [],
       ),
     );
   }
