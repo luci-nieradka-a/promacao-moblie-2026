@@ -31,13 +31,15 @@ class Aula02 extends StatelessWidget {
             ),
             Container(
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.green, width: 2),
+                border: Border.all(
+                    color: Color.fromARGB(127, 227, 230, 76), width: 2),
               ),
               child: Icon(icone2),
             ),
             Container(
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.green, width: 2),
+                border: Border.all(
+                    color: const Color.fromARGB(127, 227, 230, 76), width: 2),
               ),
               child: Icon(icone3),
             ),
@@ -104,32 +106,26 @@ class Aula02 extends StatelessWidget {
               Icons.abc,
               Icons.ac_unit_outlined,
             ),
-             _construirColuna(
+            _construirColuna(
               MainAxisAlignment.start,
               Icons.abc,
               Icons.abc_rounded,
               Icons.ac_unit,
             ),
-            const SizedBox(
-            height: 20, 
-            child: Text("Start")
-            ),
+            const SizedBox(height: 20, child: Text("Start")),
             _construirLinha(
               MainAxisAlignment.start,
               Icons.account_box_sharp,
               Icons.add_a_photo,
               Icons.add_home_rounded,
             ),
-           _construirColuna(
+            _construirColuna(
               MainAxisAlignment.start,
               Icons.account_circle_rounded,
               Icons.accessibility_new,
               Icons.ac_unit_rounded,
             ),
-            const SizedBox(
-            height: 20, 
-            child: Text("Center")
-            ),
+            const SizedBox(height: 20, child: Text("Center")),
             _construirLinha(
               MainAxisAlignment.start,
               Icons.add_alert_outlined,
@@ -142,7 +138,7 @@ class Aula02 extends StatelessWidget {
               Icons.ad_units,
               Icons.abc_outlined,
             ),
-             const SizedBox(
+            const SizedBox(
               height: 20,
               child: Text("End"),
             ),
@@ -152,9 +148,9 @@ class Aula02 extends StatelessWidget {
               Icons.add_task,
               Icons.admin_panel_settings,
             ),
-             const SizedBox(
-            height: 20, 
-            child: Text("Space Between"),
+            const SizedBox(
+              height: 20,
+              child: Text("Space Between"),
             ),
             _construirColuna(
               MainAxisAlignment.spaceBetween,
@@ -162,15 +158,15 @@ class Aula02 extends StatelessWidget {
               Icons.add_to_drive_outlined,
               Icons.nine_mp_sharp,
             ),
-             _construirLinha(
+            _construirLinha(
               MainAxisAlignment.start,
               Icons.accessible_sharp,
               Icons.add_task,
               Icons.admin_panel_settings,
             ),
-             const SizedBox(
-            height: 20, 
-            child: Text("Space Around"),
+            const SizedBox(
+              height: 20,
+              child: Text("Space Around"),
             ),
             _construirColuna(
               MainAxisAlignment.spaceAround,
@@ -178,15 +174,15 @@ class Aula02 extends StatelessWidget {
               Icons.add_to_drive_outlined,
               Icons.nine_mp_sharp,
             ),
-             _construirLinha(
+            _construirLinha(
               MainAxisAlignment.spaceAround,
               Icons.accessible_sharp,
               Icons.add_task,
               Icons.admin_panel_settings,
             ),
-             const SizedBox(
-            height: 20, 
-            child: Text("Space Evenly"),
+            const SizedBox(
+              height: 20,
+              child: Text("Space Evenly"),
             ),
             _construirColuna(
               MainAxisAlignment.spaceEvenly,
@@ -194,14 +190,13 @@ class Aula02 extends StatelessWidget {
               Icons.add_to_drive_outlined,
               Icons.nine_mp_sharp,
             ),
-             _construirLinha(
+            _construirLinha(
               MainAxisAlignment.spaceEvenly,
               Icons.accessible_sharp,
               Icons.add_task,
               Icons.admin_panel_settings,
             ),
-        ],
-          
+          ],
         ),
       ),
     );
