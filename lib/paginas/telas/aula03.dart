@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class Aula03 extends StatelessWidget {
+  const Aula03({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +10,13 @@ class MyWidget extends StatelessWidget {
         title: Text("Meu Perfil"),
         // Centraliza o título da AppBar
         centerTitle: true,
-      ), 
+      ),
       body: SingleChildScrollView(
         // Adiciona um padding em torno do conteúdo da tela
         padding: EdgeInsets.all(20),
-        child: Column()
-         children: [],
+        child: Column(
+          children: [],
+        ),
       ),
     );
   }
