@@ -59,7 +59,7 @@ class Aula03 extends StatelessWidget {
               // Cria um avatar circular
               const CircleAvatar(
                 radius: 65,
-                backgroundColor: Colors.indigo,
+                backgroundColor: Color.fromARGB(255, 134, 210, 255),
                 child: Icon(
                   Icons.person,
                   color: Colors.white,
@@ -85,11 +85,37 @@ class Aula03 extends StatelessWidget {
               // Dispor elementos em linha
               Row(
                 children: [
-                  _criaInfo(icone: Icons.school, titulo: "Turmas", texto: "5"),
-                  _criaInfo(icone: Icons.code, titulo: "Projetos", texto: "12"),
-                  _criaInfo(icone: Icons.star, titulo: "Nível", texto: "10"),
-                ],
-              )
+                  // Cada Expanded ocupa o mesmo espaço disponível na linha
+                 Expanded(
+                  child: _criaInfo(
+                    icone: Icons.school, titulo: "Turmas", texto: "5")
+                  ),
+                 SizedBox(width: 15,), // Colocar um espaço entre os cards
+                 Expanded(
+                  child: _criaInfo(
+                    icone: Icons.code, titulo: "Projetos", texto: "12")
+                  ),
+                 SizedBox(width: 15,),
+                 Expanded(
+                  child: _criaInfo(
+                    icone: Icons.star, titulo: "Nível", texto: "10"),
+                  ),
+                ], 
+              ),
+              const SizedBox(height: 30),
+              const Text(
+                "Sobre Mim",
+               style: TextStyle(
+                fontWeight: FontWeight.bold, 
+                fontSize: 22
+                ), 
+             ),
+             const SizedBox(height: 10),
+             const Text(
+              "Gosto de assistir Harry Potter"
+              "Sou fanática pelo Grêmio e adoro ter momentos de qualidade",
+              textAlign: TextAlign.justify,
+              ),
             ],
           ),
         ),

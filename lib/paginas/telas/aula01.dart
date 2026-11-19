@@ -27,7 +27,7 @@ class Aula01 extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(16),
                 margin: EdgeInsets.all(16),
-                color: const Color.fromARGB(255, 57, 106, 146),
+                color: const Color.fromARGB(255, 163, 213, 255),
                 child: const Center(
                   child: Text(
                     "Segundo Container",
